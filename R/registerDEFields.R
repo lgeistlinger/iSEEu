@@ -143,13 +143,9 @@ getLogFCPatterns <- function(se, defaults=c("logFC", "LogFC")) {
 .matchLogFCFields <- function(se, available) .match_fields(getLogFCFields(se), c(getLogFCPattern(), getLogFCPatterns(se)), available)
 
 .match_fields <- function(fields, patterns, available) {
-    if (!is.null(fields)) {
-        intersect(fields, available)
-    } else {
-        okay <- logical(length(available))
-        for (x in patterns) {
-            okay <- okay | grepl(x, available, fixed=TRUE)
-        }
-        unique(available[okay])
+    okay <- logical(length(available))
+    for (x in patterns) {
+        okay <- okay | grepl(x, available)
     }
+    unique(available[okay])
 }

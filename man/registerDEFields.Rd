@@ -77,7 +77,7 @@ The registered \code{patterns} are used for partial name matching to the names o
 All partial matching must be exact - regular expressions are not supported.
 Matches can occur anywhere in the name.
 For example, with \code{"PValue"}, columns with the names \code{"PValue.X"} and \code{"X.PValue"} will be considered acceptable matches.
-If no \code{patterns} are supplied, the Panels will use the \code{defaults}.
+If no \code{patterns} are supplied, the Panels will use the values in \code{defaults}.
 }
 \examples{
 # Making up some results with unusual names.
