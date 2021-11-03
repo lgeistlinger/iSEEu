@@ -1,3 +1,12 @@
+# iSEEu 1.5.2
+
+* Fix bug causing `AggregatedDotPlot` to crash when a column selection was transferred.
+* Fix bug in retrieving a feature set
+
+# iSEEu 1.5.1
+
+* Fix spelling typo in man page.
+
 # iSEEu 1.3.5
 
 * Switch to registration for storing DE Panel options, via `registerPValuePatterns` and related functions.

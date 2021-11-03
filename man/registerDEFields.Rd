@@ -66,7 +66,7 @@ Register the names of fields containing various DE statistics, to populate the u
 \details{
 DE-related Panels need to find relevant \code{\link{rowData}} fields containing p-values, log-fold changes, etc. to set appropriate defaults in the user interface.
 These functions allow a user to tune the definition of what those Panels consider to be relevant,
-which is occasionally necessary if the DE statistics are stored in a \code{\link{rowData}} field with an usual column name.
+which is occasionally necessary if the DE statistics are stored in a \code{\link{rowData}} field with an unusual column name.
 The idea is to \code{register} the relevant fields in \code{se}, which can then be supplied to \code{\link{iSEE}} with the affected Panels - see Examples.
 
 The registered \code{fields} should be the names of appropriate columns in \code{\link{rowData}} containing continuous variables.
